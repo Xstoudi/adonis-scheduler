@@ -15,7 +15,7 @@ This package is available in the npm registry.
 npm i @stouder-io/adonis-scheduler
 ```
 
-Next, configure the pacvkage by running the following command.
+Next, configure the package by running the following command.
 ```
 node ace configure @stouder-io/adonis-scheduler
 ```
