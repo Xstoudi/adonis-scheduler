@@ -1,9 +1,9 @@
 {
   "name": "@stouder-io/adonis-scheduler",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "",
   "main": "build/providers/SchedulerProvider.js",
-  "typings": "build/adonis-typings/index.d.ts",
+  "types": "build/adonis-typings/index.d.ts",
   "scripts": {
     "mrm": "mrm --preset=@adonisjs/mrm-preset",
     "pretest": "npm run lint",
