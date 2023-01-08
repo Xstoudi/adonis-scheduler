@@ -6,10 +6,10 @@ export default class SchedulerProvider {
 
   public async register() {
     this.app.container.withBindings(
-      ['Adonis/Core/Config', 'Adonis/Core/Logger', 'Adonis/Core/Application'],
-      (config, logger, app) => {
+      ['Adonis/Core/Logger', 'Adonis/Core/Application'],
+      (logger, app) => {
         this.app.container.singleton('StouderIO/Scheduler', () => {
-          return new Scheduler(config, logger, app)
+          return new Scheduler(logger, app)
         })
       }
     )
