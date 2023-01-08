@@ -1,24 +1,37 @@
 <div align="center">
   <h3>adonis-scheduler</h3>
   <p>Unopinionated scheduler for Adonis</p>
-  <a href="https://www.npmjs.com/package/adonis5-prometheus">
-    <img src="https://img.shields.io/npm/v/adonis5-prometheus.svg?style=for-the-badge&logo=npm" />
+  <a href="https://www.npmjs.com/package/@stouder-io/adonis-scheduler">
+    <img src="https://img.shields.io/npm/v/@stouder-io/adonis-scheduler.svg?style=for-the-badge&logo=npm" />
   </a>
-  <img src="https://img.shields.io/npm/l/adonis5-prometheus?color=blueviolet&style=for-the-badge" />
+  <img src="https://img.shields.io/npm/l/@stouder-io/adonis-scheduler?color=blueviolet&style=for-the-badge" />
   <img src="https://img.shields.io/badge/Typescript-294E80.svg?style=for-the-badge&logo=typescript" />
 </div>
 
-A short brief
-
 ## Installation
+```
+npm i @stouder-io/adonis-scheduler
+node ace configure @stouder-io/adonis-scheduler
+```
 
-## Usage
+# Usage
+Simply run the following command to create a new task:
+```
+node ace make:task MyFirstTask
+```
 
-[github-actions-image]: https://github.com/adonis-scheduler/actions/workflows/test.yml
-[github-actions-url]: https://img.shields.io/github/workflow/status/adonis-scheduler/test?style=for-the-badge "github-actions"
+This will create the following file under `app/Tasks` directory:
+```ts
+import { TaskContract } from '@ioc:StouderIO/Scheduler'
 
-[npm-image]: https://img.shields.io/npm/v/adonis-scheduler.svg?style=for-the-badge&logo=npm
-[npm-url]: https://npmjs.org/package/adonis-scheduler "npm"
+export default class MyFirstTask implements TaskContract {
+  public readonly name: string = '{{ name }}'
+  public readonly cron: string = '* * * * *'
 
-[license-image]: https://img.shields.io/npm/l/adonis-scheduler?color=blueviolet&style=for-the-badge
-[license-url]: LICENSE.md "license"
+  public async run(): Promise<void> {
+    
+  }
+}
+```
+
+Simply edit the cron expression to configure the task execution recurrence and code what it should do in the `run` function.

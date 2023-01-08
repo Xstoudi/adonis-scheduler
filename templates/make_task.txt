@@ -1,7 +1,7 @@
 import { TaskContract } from '@ioc:StouderIO/Scheduler'
 
-export default class Task implements TaskContract {
-  public readonly name: string = 'test-task'
+export default class {{ filename }} implements TaskContract {
+  public readonly name: string = '{{ filename }}'
   public readonly cron: string = '* * * * *'
 
   public async run(): Promise<void> {

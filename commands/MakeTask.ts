@@ -23,7 +23,6 @@ export default class MakeJob extends BaseCommand {
       .destinationDir(path || 'app/Tasks')
       .useMustache()
       .appRoot(this.application.cliCwd || this.application.appRoot)
-      .apply({ name: this.name })
 
     await this.generator.run()
   }
