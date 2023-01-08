@@ -4,6 +4,7 @@
   "description": "",
   "main": "build/providers/SchedulerProvider.js",
   "types": "build/adonis-typings/index.d.ts",
+  "private": false,
   "scripts": {
     "mrm": "mrm --preset=@adonisjs/mrm-preset",
     "pretest": "npm run lint",
