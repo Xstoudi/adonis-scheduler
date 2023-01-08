@@ -1,4 +1,5 @@
 <div align="center">
+  <img src="https://user-images.githubusercontent.com/2575182/211221271-5d656097-335d-4ea4-9957-746e6166fb4e.png" />
   <h3>adonis-scheduler</h3>
   <p>Unopinionated scheduler for Adonis</p>
   <a href="https://www.npmjs.com/package/@stouder-io/adonis-scheduler">
