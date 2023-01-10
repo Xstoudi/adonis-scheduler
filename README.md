@@ -44,7 +44,7 @@ export default class MyFirstTask implements TaskContract {
 
 The `run` method is called when the scheduler run the task according to the cron expression you configure in the `cron` field. `name` is just for internal use, but it must be unique.
 
-Please note that using `await` in the task has the potential to block your full application as Node.js is single-threaded.
+Please note that running CPU-intensive operations in the task has the potential to block your full web application as Node.js is single-threaded.
 
 If you need to run high-intensive CPU task, you could run an Ace command using `execa`, for example:
 ```ts
@@ -61,3 +61,5 @@ export default class MyFirstTask implements TaskContract {
   }
 }
 ```
+
+Also, if you run multiple instances of your Adonis application, the tasks will be ran on each instance.

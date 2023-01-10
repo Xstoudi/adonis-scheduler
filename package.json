@@ -1,12 +1,20 @@
 {
   "name": "@stouder-io/adonis-scheduler",
   "version": "1.0.2",
-  "description": "",
+  "description": "Unopinionated scheduler for Adonis",
+  "homepage": "https://github.com/Xstoudi/adonis-scheduler#readme",
   "main": "build/providers/SchedulerProvider.js",
   "types": "build/adonis-typings/index.d.ts",
   "private": false,
   "publishConfig": {
     "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xstoudi/adonis-scheduler.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Xstoudi/adonis-scheduler/issues"
   },
   "scripts": {
     "mrm": "mrm --preset=@adonisjs/mrm-preset",
@@ -29,7 +37,8 @@
     "scheduler",
     "cron",
     "jobs",
-    "adonisjs"
+    "adonisjs",
+    "task"
   ],
   "author": "Xavier Stouder <xavier@stouder.io>",
   "license": "MIT",
