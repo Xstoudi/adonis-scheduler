@@ -1,6 +1,6 @@
 {
   "name": "@stouder-io/adonis-scheduler",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Unopinionated scheduler for Adonis",
   "homepage": "https://github.com/Xstoudi/adonis-scheduler#readme",
   "main": "build/providers/SchedulerProvider.js",
