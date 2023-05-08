@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/2575182/211221271-5d656097-335d-4ea4-9957-746e6166fb4e.png" />
+  <img src="https://user-images.githubusercontent.com/2575182/236929207-c76d0ae4-5a6f-4951-b452-db1440edb0e7.png" />
   <h3>@stouder-io/adonis-scheduler</h3>
   <p>Unopinionated scheduler for Adonis</p>
   <a href="https://www.npmjs.com/package/@stouder-io/adonis-scheduler">
@@ -8,6 +8,8 @@
   <img src="https://img.shields.io/npm/l/@stouder-io/adonis-scheduler?color=blueviolet&style=for-the-badge" />
   <img alt="npm" src="https://img.shields.io/npm/dt/@stouder-io/adonis-scheduler?style=for-the-badge">
 </div>
+![dessin]()
+
 
 ## Installation
 This package is available in the npm registry.
