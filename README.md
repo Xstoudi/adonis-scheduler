@@ -8,8 +8,6 @@
   <img src="https://img.shields.io/npm/l/@stouder-io/adonis-scheduler?color=blueviolet&style=for-the-badge" />
   <img alt="npm" src="https://img.shields.io/npm/dt/@stouder-io/adonis-scheduler?style=for-the-badge">
 </div>
-![dessin]()
-
 
 ## Installation
 This package is available in the npm registry.
